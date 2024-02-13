@@ -5,25 +5,6 @@ This program was inspired by:
 - keybr.com website
 - typing.com website
 */
-/* 
-POLECENIE:
-1. Trener pisania na klawiaturze
-Program wczytuje bazę zdań z pliku,
-każde zdanie w osobnej linii.
-Następnie wyświetla użytkownikowi jedno zdanie
-i każe je przepisać.
-Użytkownik wpisuje tekst,
-jednak nie widzi wpisanego tekstu na ekranie.
-Po naciśnięciu "enter" program wyświetla
-wpisane przez użytkownika zdanie,
-wyraźnie pokazuje błędy oraz pokazuje
-procentową ilość błędów
-(za dobre uznajemy właściwe litery
-na właściwych pozycjach).
-Do tego program pokazuje czas,
-jaki upłynął od naciśnięcia
-pierwszego klawisza zdania do ostatniego.
-*/
 /*
 Necessary functionalities:
 - read a database from a file (DONE)
@@ -382,60 +363,6 @@ int main(void)
     openAndWorkOnFile(practiceTextChoice);
     return 0;
 }
-// kbhit(); read input without printing it to the screen - doesn't work on ARM
-
-// 23.12.2022 5:10PM - 8:43PM
-// I have written the design of the project and sketch of necessary functions
-// writing sketch of the main function
-
-// 24.12.2022 6:13PM - 7:30PM
-// I began implementing the preMenu and the core of the quasi GUI
-// 1. Constructed first version of the logo
-
-// 7.01.2023 12:13PM - 13:55PM
-// I began testing comparing the string from the file with the input string
-// (final code for testing string comparison is still present below inside a comment)
-
-// 14 January 1:30AM - 10:00PM
-// fixed issues with the strings
-
-// 15 January 1:21AM - 5:00AM
-// 1. improved the corectness coloring
-// 2. fixed undefined behaviours with scanf while switching the pages from the preMenu
-// got an idea to modify the text files
-// idea to make some levels of difficulty (i.e)
-//  1. easy
-//  2. middle
-//  3. hard
-//  4. crazy
-
-// 15 January 10:00AM - AM 4:00PM
-// 1. finally fixed problem with compilation outside IDE
-// 2. Fixed problems with masking the correct, incorrect, 
-// not typed characters
-// 3. adding exceeding characters functionality
-// 4. Adding timer functionality
-// 5. Formatted text examples (beak of lines)
-// PASSED TESTS (working with files and displaying corectness)
-// modified an idea of MENU
-
-// 15 January 6:30PM
-// 1. code tidy ups (removing unnecessary coments or writing some explanations)
-// 2. made some minor tweaks
-// preparing implementing menu
-// considering dividing some modules to smaller functions
-
-// 19 January 1:30AM
-// added time functionality (in seconds)
-// got idea to format the time in minutes, seconds and miliseconds
-// ADD LINKED LISTS (LEADERBOARD)
-
-// 19 January 3:45PM
-// added time functionality (measuring from displaying the text
-// to the last keystroke (ESC -> ENTER)
-// formatted the layout of the summary message and time display
-// fixed some issues with the values of the summary text
-// added coloring summary values
 
 // TO DO! (updated and deleted after completion)
 

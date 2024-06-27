@@ -1,0 +1,4 @@
+Divide project for smaller modules.
+Each function has to have its own individual role.
+To make program more readable you can export functions
+to separate file and header with program functions declarations.
